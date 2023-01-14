@@ -18,5 +18,4 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, HangmanGame::class.java)
         startActivity(intent)
     }
-
 }

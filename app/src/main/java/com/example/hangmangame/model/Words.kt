@@ -1,4 +1,6 @@
 package com.example.hangmangame.model
 
-class Words {
-}
+data class Words (
+    var word: String? = null,
+    var category: String? = null
+)
