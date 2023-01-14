@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainText">72sp</dimen>
+    <dimen name="btn">20sp</dimen>
+    <dimen name="letter">48sp</dimen>
+    <dimen name="word">34sp</dimen>
+    <dimen name="letterBackgroundWidth">38sp</dimen>
+    <dimen name="letterBackgroundHeight">50sp</dimen>
+    <dimen name="paddingHLetter">4dp</dimen>
+</resources>

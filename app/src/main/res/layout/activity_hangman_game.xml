@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper"
+    tools:context=".view.activities.HangmanGame">
+
+    <ImageView
+        android:id="@+id/ivHangman3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hangman_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/notebook"
+        android:text="@string/category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/letter"
+        app:layout_constraintBottom_toTopOf="@+id/tvWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHangman3" />
+
+    <TextView
+        android:id="@+id/tvWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/notebook"
+        android:gravity="center"
+        android:letterSpacing="0.3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/word"
+        app:layout_constraintBottom_toTopOf="@+id/lettersLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategory"
+        tools:ignore="TextContrastCheck"
+        android:text="@string/word" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lettersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWord">
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            app:constraint_referenced_ids="tvA,tvB,tvC,tvD,tvE,tvF,tvG,tvH,tvI,tvJ,tvK,tvL,tvM,tvN,tvñ,tvO,tvP,tvQ,tvR,tvS,tvT,tvU,tvV,tvW,tvX,tvY,tvZ"
+            app:flow_wrapMode="aligned" />
+
+        <TextView
+            android:id="@+id/tvA"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/a"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvB"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/b"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvC"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/c"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvD"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/d"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvE"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/e"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvF"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/f"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvG"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/g"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvH"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/h"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvI"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/i"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvJ"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/j"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvK"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/k"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvL"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/l"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvM"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/m"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvN"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/n"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvñ"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/ene"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvO"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/o"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvP"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/p"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvQ"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/q"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvS"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/s"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvT"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/t"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvR"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/r"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvU"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/u"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvV"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/v"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvW"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/w"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvX"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/x"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvY"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/y"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+        <TextView
+            android:id="@+id/tvZ"
+            android:layout_width="@dimen/letterBackgroundWidth"
+            android:layout_height="@dimen/letterBackgroundHeight"
+            android:background="@color/purple_pastel"
+            android:fontFamily="@font/notebook"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/paddingHLetter"
+            android:text="@string/z"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivResetIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/tvWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/tvCategory"
+        app:layout_constraintTop_toBottomOf="@+id/ivHangman3"
+        app:layout_constraintVertical_bias="0.59000003"
+        app:srcCompat="@drawable/restart"
+        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

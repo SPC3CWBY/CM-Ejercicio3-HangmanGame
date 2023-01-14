@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hangman">Hangman</string>
+    <string name="start_game">START GAME</string>
+    <string name="category">Category</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="h">H</string>
+    <string name="word">_ _ _ _ _ _</string>
+</resources>
