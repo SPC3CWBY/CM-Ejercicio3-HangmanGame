@@ -29,8 +29,7 @@
         android:textColor="@color/black"
         android:textSize="@dimen/letter"
         app:layout_constraintBottom_toTopOf="@+id/tvWord"
-        app:layout_constraintEnd_toStartOf="@+id/ivResetIcon"
-        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivHangman3" />
 
@@ -38,7 +37,7 @@
         android:id="@+id/tvWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/notebook"
         android:gravity="center"
         android:letterSpacing="0.3"
@@ -55,12 +54,12 @@
         android:id="@+id/ivResetIcon"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:onClick="onClick"
-        app:layout_constraintBottom_toTopOf="@+id/tvWord"
+        app:layout_constraintBottom_toBottomOf="@+id/lettersLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9515"
         app:layout_constraintStart_toStartOf="@+id/tvWord"
-        app:layout_constraintTop_toBottomOf="@+id/ivHangman3"
+        app:layout_constraintTop_toBottomOf="@+id/tvWord"
         app:srcCompat="@drawable/restart"
         tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
 
@@ -76,10 +75,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025" />
 
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notebook"
+        android:text="@string/you_win"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/mainText"
+        app:layout_constraintBottom_toTopOf="@+id/tvCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLosser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notebook"
+        android:text="@string/you_lose"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/mainText"
+        app:layout_constraintBottom_toTopOf="@+id/tvCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/lettersLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvWord">
 

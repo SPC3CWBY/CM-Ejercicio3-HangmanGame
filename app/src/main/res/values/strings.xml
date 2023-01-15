@@ -31,4 +31,7 @@
     <string name="y">Y</string>
     <string name="z">Z</string>
     <string name="word">_ _ _ _ _ _</string>
+    <string name="error">Error de conexión %1$s</string>
+    <string name="you_win">You Win!</string>
+    <string name="you_lose">You Lose!</string>
 </resources>
